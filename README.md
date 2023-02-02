@@ -4,7 +4,13 @@
 - Basic remix app created using 'just the basics' and 'express'. 
 - Added self-signed certificate files `cert\key.pem` and `cert\cert.pem`  
 - Only change to `server.js` is using `https - createServer()` to start express server with ssl options
+
+## Startup
 - Personally ran app on port `4242` so use `PORT=4242 npm run dev` to start up
+- Start chrome with some flags to ignore issues with self-signed certificates:
+  ```
+  /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --user-data-dir=/tmp/foo --ignore-certificate-errors --ignore-ssl-errors --unsafely-treat-insecure-origin-as-secure=https://localhost:4242
+  ```
 - Then visit `https://localhost:4242`
 
 ## Issues
