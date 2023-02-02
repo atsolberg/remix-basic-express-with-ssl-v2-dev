@@ -13,6 +13,12 @@
   ```
 - Then visit `https://localhost:4242`
 
+---
+
+**NOTE:** I use `localremix` instead of `localhost` by adding `127.0.0.1 localremix` to my `etc/hosts` file, and the self-signed certificate files in this repo were created referencing `localremix` as the common name (CN).  You might want to use your own certificate files or you can use `https://localremix:4242` by added `127.0.0.1 localremix` to your `etc/hosts` file like I did.  You can supply the directory path to your cert files using the `CERT_DIR` env var at startup: `CERT_DIR=Users/bob/my-certs PORT=4242 npm run dev`.   `server.js` expects the cert file names to be `key.pem` and `cert.pem`.
+
+---
+
 ## Issues
 - The client side websocket will not connect over `wss:` protocal
 - The `future: { unstable_dev: { port } }` option does not seem to be used, a random port is always chosen
