@@ -5,6 +5,7 @@
 - Added self-signed certificate files `cert\key.pem` and `cert\cert.pem`  
 - Only change to `server.js` is using `https - createServer()` to start express server with ssl options
 - Personally ran app on port `4242` so use `PORT=4242 npm run dev` to start up
+- Then visit `https://localhost:4242`
 
 ## Issues
 - The client side websocket will not connect over `wss:` protocal
