@@ -11,3 +11,5 @@
 - The `future: { unstable_dev: { port } }` option does not seem to be used, a random port is always chosen
 
 ## Error:
+
+![image](https://user-images.githubusercontent.com/2157412/216356439-4e2d1e1f-bf01-4594-b8cf-314f4a716743.png)
