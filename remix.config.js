@@ -9,6 +9,9 @@ module.exports = {
 
   future: {
     unstable_dev: {
+      https: true,
+      host: 'localremix',
+
       // Port to use for the dev server (i.e. the <LiveReload> websocket)
       // This can be overridden by a CLI flag: `remix dev --port 3011`
       // By default, we will find an empty port and use that

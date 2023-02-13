@@ -24,7 +24,7 @@ export default function App() {
         <Outlet />
         <ScrollRestoration />
         <Scripts />
-        <LiveReload port={8002} />
+        <LiveReload port={4242} />
       </body>
     </html>
   );
